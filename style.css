@@ -1,0 +1,229 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background:linear-gradient(rgb(16, 23, 23),rgb(23, 62, 86),rgb(66, 131, 222) );
+}
+
+header {
+  background: linear-gradient(to right, #0f281b, #109696);
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+nav {
+  background: #024954;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav a {
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  background: #0077b6;
+  text-decoration: underline;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background: #34495e;
+  list-style: none;
+  padding: 0.5rem;
+}
+
+.dropdown-menu li a {
+  color: #fff;
+  display: block;
+  padding: 0.5rem;
+}
+
+.container {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.profile {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  background:linear-gradient(to right, #205781, #4F959D);
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.profile img {
+  border-radius: 50%;
+  width: 150px;
+}
+
+.about,
+.activities
+{
+  background:linear-gradient(to right, #205781, #4F959D);
+  margin-top: 2rem;
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.activities h2 {
+  text-align: center;
+}
+
+.opini,
+.activities
+{ 
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.opini {
+  background:linear-gradient(to right, #205781, #4F959D);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.opini h2 {
+  position: absolute;
+  text-align: center;
+  color: black;
+  top: 183%;
+}
+
+.opini div {
+  width: calc(33.333% - 20px);
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+
+
+.opini img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+
+.opini h4 {
+  margin: 0;
+  padding: 12px;
+  font-size: 1.1em;
+  background-color: #f5f5f5;
+  color: #2c3e50;
+}
+
+/* Responsive untuk tablet dan HP */
+@media (max-width: 768px) {
+  .opini div {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .opini div {
+    width: 100%;
+  }
+}
+
+.about img {
+  border-radius: 50%;
+  width: 150px;
+  margin-left: 80%;
+}
+
+.about h2 {
+  font-size: 2.5em;
+  color: rgb(27, 27, 99);
+  font-family: 'Montserrat',sans-serif;
+  text-align: center;
+  position: absolute;
+  padding-bottom: 5px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.15);
+  animation: bounceIn 0.7s ease;
+  top: 68%;
+}
+
+.about p {
+  position: absolute;
+  text-align: justify;
+  top: 78%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #9c7f7f;
+  padding: 0.5rem;
+}
+
+
+form input,
+form textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  padding: 10px 20px;
+  background: #1c0996;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #023e8a;
+}
+
+iframe {
+  width: 100%;
+  height: 250px;
+  border: 0;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+
+.contact {
+  text-align: left;
+}
+
+footer {
+  background: #0e3f87;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
